@@ -8,19 +8,20 @@
         <title>Travel Agency</title>
     </head>
     <body>
-        <header>
+        <a id="acceuil"></a>
+        <header class="margin-bottom">
             <!-- section menu -->
-            <section class="container-menu color-black">
+            <section class="container-menu color-black bg-white">
                 <nav class="flex space-around item-center">
                     <div class="logo">
                         <span class="weight-7">Travel Agency</span>
-                        <span class="orange">.</span>
+                        <span class="orange font-size-20">.</span>
                     </div>
                     <ul class="flex justify-center item-center uppercase weight-7">
-                        <li><a href="#" class="decoration-none color-black">Acceuil</a></li>
-                        <li><a href="#" class="decoration-none color-black">Destinations</a></li>
-                        <li><a href="#" class="decoration-none color-black">Circuits</a></li>
-                        <li><a href="#" class="decoration-none color-black">contact</a></li>
+                        <li><a href="#acceuil" class="decoration-none color-black">Acceuil</a></li>
+                        <li><a href="#destinations" class="decoration-none color-black">Destinations</a></li>
+                        <li><a href="#circuits" class="decoration-none color-black">Circuits</a></li>
+                        <li><a href="#contact" class="decoration-none color-black">contact</a></li>
                     </ul>
                 </nav>
             </section>
@@ -38,13 +39,15 @@
         </header>
 
         <!-- card section -->
-        <section class="cards flex justify-center text-center">
+        <a id="destinations"></a>
+        <section class="cards flex justify-center text-center margin-10 margin-bottom">
             <div class="card color-black">
                 <div class="img">
                     <img src="./assets/images/steps-icon-1.png" alt="">
                 </div>
                 <div class="text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur assumenda ipsa culpa saepe nobis est totam officiis illo.</p>
+                    <h1 class="color-black uppercase margin-10">planifier</h1>
+                    <p class="color-black-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur assumenda ipsa culpa saepe nobis est totam officiis illo.</p>
                 </div>
             </div>
 
@@ -53,7 +56,8 @@
                     <img src="./assets/images/steps-icon-2.png" alt="">
                 </div>
                 <div class="text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur assumenda ipsa culpa saepe nobis est totam officiis illo.</p>
+                    <h1 class="color-black uppercase margin-10">organiser</h1>
+                    <p class="color-black-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur assumenda ipsa culpa saepe nobis est totam officiis illo.</p>
                 </div>
             </div>
 
@@ -62,11 +66,70 @@
                     <img src="./assets/images/steps-icon-3.png" alt="">
                 </div>
                 <div class="text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur assumenda ipsa culpa saepe nobis est totam officiis illo.</p>
-                </div>
-                
-
+                    <h1 class="color-black uppercase margin-10">voyager</h1>
+                    <p class="color-black-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur assumenda ipsa culpa saepe nobis est totam officiis illo.</p>
+                </div>      
             </div>
         </section>
+
+        <!-- section info -->
+        <a id="circuits"></a>
+        <section class="infos text-center flex space-around bg-gray margin-bottom">
+            <div class="info grid arround-10 bg-white">
+                <div class="left">
+                    <h1 class="color-black uppercase margin-10">partez en famille</h1>
+                    <hr>
+                    <p class="color-black-light margin-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt iusto natus, eaque minus accusamus dicta hic.</p>
+                    <button class="bg-orange button color-white weight-5 margin-10">Plus d'info</button>
+                </div>
+                <div class="right">
+                    <img src="./assets/images/article-image-1.jpg" alt="" class="arroud-right">
+                </div>
+            </div>
+            <div class="info grid arround-10 bg-white">
+                <div class="left">
+                    <h1 class="color-black margin-10 uppercase">envide de s'évader</h1>
+                    <hr>
+                    <p class="color-black-light margin-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt iusto natus, eaque minus accusamus dicta hic.</p>
+                    <button class="bg-orange button margin-10 color-white weight-5">Plus d'info</button>
+                </div>
+
+                <div class="right">
+                    <img src="./assets/images/article-image-2.jpg" alt="" class="arroud-right">
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <a id="contact"></a>
+        <section class="contact margin-bottom">
+            <div class="header margin-10">
+                <h1 class="color-black uppercase font-size-15 text-center margin-10">contactez-nous</h1>
+                <hr class="margin-10 bg-blue">
+                <p class="color-black-light text-center margin-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo obcaecati odit quod soluta, assumenda delectus magnam veritatis amet voluptatem voluptatum, maxime voluptatibus porro aliquid sit amet consectetur adipisicing elit. Possimus minima fugit autem odit ipsa modi officiis odio nesciunt animi omnis, placeat accusamus quia iste dolores rerum harum vitae mollitia repellendus.</p>
+            </div>
+
+            <form action="" class="flex justify-center">
+                <div>
+                    <label for="" class="color-black-light weight-7">Nom</label>
+                    <input type="text" placeholder="Votre nom">
+                </div>
+                <div>
+                    <label for="" class="color-black-light weight-7">Email</label>
+                    <input  type="text" placeholder="Votre email">
+                </div>
+                <button class="button bg-blue color-white weight-5 uppercase">ok</button>
+            </form>
+        </section>
+
+        <footer class="bg-black">
+            <div class="text-center color-white ver">
+                <h1 class="margin-bottom-10">
+                    <span class="weight-7 font-size-20">Travel Agency</span>
+                    <span class="orange font-size-20">.</span>
+                </h1>
+                <p>Copyright &copy 2016. Tous droits réservés.</p>
+            </div>
+        </footer>
     </body>
 </html>
